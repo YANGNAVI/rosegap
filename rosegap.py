@@ -54,7 +54,7 @@ while not Done:
             print("bing", gap, count)
             if gap > 0.5:
                 text = f'''
-ROSEgap : {gap}%
+ROSE gap : {gap}%
 
 bingX : {bingX_ask1}
 mexc : {mexc_bid1}
@@ -69,7 +69,7 @@ binance : {binance_data}
             print("mexc", gap, count)
             text = f'''
 역갭발생
-ROSEgap : {gap}%
+ROSE gap : {gap}%
 
 bingX : {bingX_ask1}
 mexc : {mexc_bid1}
