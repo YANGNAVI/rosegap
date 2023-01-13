@@ -1,6 +1,4 @@
-import winsound as sd
 import requests
-import pyautogui
 import time
 import telegram
 mexc_url = "https://contract.mexc.com/api/v1/contract/ticker"
@@ -12,12 +10,6 @@ chat_token = "5963692938:AAEPEQRG5rME9HYUD5NNMgK4pNDbKFL97oQ"
 bot = telegram.Bot(token=chat_token)
 
 symbol = "ROSE"
-
-
-def beepsound():
-    fr = 2000    # range : 37 ~ 32767
-    du = 1000     # 1000 ms ==1second
-    sd.Beep(fr, du)  # winsound.Beep(frequency, duration)
 
 
 def mexc_request_data(url) -> None:
