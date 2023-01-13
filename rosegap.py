@@ -52,6 +52,8 @@ while not Done:
         if bingX_ask1 > mexc_bid1:
             gap = round(bingX_ask1/mexc_ask1 * 100 - 100, 3)
             print("bing", gap, count)
+            data = {"chat_id": "5792701026", "text": f"gap : {gap}%"}
+            res = requests.post(bot_url, json=data)
             if gap < 0.5:
                 text = f'''
 ROSE gap : {gap}%
